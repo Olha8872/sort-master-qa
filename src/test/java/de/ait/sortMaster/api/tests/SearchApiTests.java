@@ -22,24 +22,20 @@ public class SearchApiTests extends de.ait.sortMaster.api.config.TestBase {
 
         Assert.assertEquals(response.getStatusCode(), 200, "Status code should be 200");
 
-
         String containerName = response.jsonPath().getString("[0].container.name");
         Assert.assertEquals(containerName, "Paper", "Incorrect container returned");
     }
-
     @Test
     public void searchWithInvalidInputTest() {
         RestAssured.baseURI = "http://localhost:5175";
 
         Response response = given()
-                .queryParam("name", "!@#$%^&*")       // параметр 'name' вместо 'item'
+                .queryParam("name", "!@#$%^&*")
                 .when()
-                .get("/api/items/search")               // путь исправлен
+                .get("/api/items/search")
                 .then()
                 .extract().response();
 
-        // В контроллере пока нет проверки на 400,
-        // но если хочешь, можешь добавить в сервис/контроллер валидацию и вернуть 400
-        Assert.assertEquals(response.getStatusCode(), 200, "Expected 200 or adjust controller to return 400 on invalid input");
+                Assert.assertEquals(response.getStatusCode(), 200, "Expected 200 or adjust controller to return 400 on invalid input");
     }
 }

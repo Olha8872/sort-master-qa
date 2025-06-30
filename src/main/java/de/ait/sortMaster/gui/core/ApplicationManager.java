@@ -51,6 +51,5 @@ public class ApplicationManager {
         return driver;
     }
 
-
 }
 

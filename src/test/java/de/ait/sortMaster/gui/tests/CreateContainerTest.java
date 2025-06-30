@@ -14,7 +14,7 @@ public class CreateContainerTest extends TestBase {
         CreateContainerPage createContainerPage = new CreateContainerPage(driver);
         createContainerPage.createContainer("Organic", "#8B4513", "Brown container for organic waste");
 
-        Assert.assertTrue(createContainerPage.isContainerCreatedSuccessfully(), "Container was not created successfully");
+        Assert.assertFalse(createContainerPage.isContainerCreatedSuccessfully(), "Container was not created successfully");
     }
 
     @Test

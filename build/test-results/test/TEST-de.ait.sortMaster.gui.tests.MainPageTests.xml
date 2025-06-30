@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.ait.sortMaster.gui.tests.MainPageTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-07-02T15:39:46" hostname="DESKTOP-6E1M17H" time="39.962">
+  <properties/>
+  <testcase name="inputShouldBeVisibleTest" classname="de.ait.sortMaster.gui.tests.MainPageTests" time="0.1"/>
+  <testcase name="openMainPageTest" classname="de.ait.sortMaster.gui.tests.MainPageTests" time="0.071"/>
+  <testcase name="searchEmptyInputTest" classname="de.ait.sortMaster.gui.tests.MainPageTests" time="10.353"/>
+  <testcase name="searchInvalidItemTest" classname="de.ait.sortMaster.gui.tests.MainPageTests" time="10.588"/>
+  <testcase name="searchItemInContainerTest" classname="de.ait.sortMaster.gui.tests.MainPageTests" time="10.876"/>
+  <system-out><![CDATA[17:39:46.372 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:39:46.915 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Start test inputShouldBeVisibleTest with data: []
+17:39:46.918 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:39:47.024 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (f81cfd01ec54edce373aa0f284ceb55f)] -> css selector: input[placeholder*='item name']]}
+17:39:47.059 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- PASSED: inputShouldBeVisibleTest
+17:39:47.059 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Stop test
+17:39:47.059 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- **********************************************************
+17:39:48.466 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:39:48.996 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Start test openMainPageTest with data: []
+17:39:48.998 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:39:49.062 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (a4b361fdf097ca014f557cf5342c3bed)] -> xpath: //h2[contains(text(), 'Find the Right Container')]]}
+17:39:49.088 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- PASSED: openMainPageTest
+17:39:49.088 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Stop test
+17:39:49.088 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- **********************************************************
+17:39:50.484 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:39:50.995 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Start test searchEmptyInputTest with data: []
+17:39:50.995 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:39:51.053 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (297d29e1cc08730d66e8e2ce8ea4e503)] -> css selector: input[placeholder*='item name']]}
+17:39:51.122 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (297d29e1cc08730d66e8e2ce8ea4e503)] -> css selector: input[placeholder*='item name']]}
+17:39:51.243 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (297d29e1cc08730d66e8e2ce8ea4e503)] -> css selector: input[placeholder*='item name']]}
+17:40:01.355 [Test worker] ERROR de.ait.sortMaster.utils.MyListener -- Something went wrong!!!
+17:40:01.356 [Test worker] ERROR de.ait.sortMaster.utils.MyListener -- ================================
+17:40:01.356 [Test worker] ERROR de.ait.sortMaster.utils.MyListener -- Method public abstract org.openqa.selenium.WebElement org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)
+17:40:01.356 [Test worker] ERROR de.ait.sortMaster.utils.MyListener -- ================================
+17:40:01.356 [Test worker] ERROR de.ait.sortMaster.utils.MyListener -- Target ChromeDriver: chrome on windows (297d29e1cc08730d66e8e2ce8ea4e503)
+17:40:01.356 [Test worker] ERROR de.ait.sortMaster.utils.MyListener -- ================================
+17:40:01.356 [Test worker] ERROR de.ait.sortMaster.utils.MyListener -- Exeption null
+17:40:01.364 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- PASSED: searchEmptyInputTest
+17:40:01.366 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Stop test
+17:40:01.366 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- **********************************************************
+17:40:02.854 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:40:03.307 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Start test searchInvalidItemTest with data: []
+17:40:03.310 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:40:03.408 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (a2e606cce42a35f017f240037e99193c)] -> css selector: input[placeholder*='item name']]}
+17:40:03.495 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (a2e606cce42a35f017f240037e99193c)] -> css selector: input[placeholder*='item name']]}
+17:40:03.699 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (a2e606cce42a35f017f240037e99193c)] -> css selector: input[placeholder*='item name']]}
+17:40:03.782 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (a2e606cce42a35f017f240037e99193c)] -> xpath: //*[contains(text(), 'No matching containers found')]]}
+17:40:03.834 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (a2e606cce42a35f017f240037e99193c)] -> xpath: //*[contains(text(), 'No matching containers found')]]}
+17:40:13.920 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found elements 0
+17:40:13.920 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- PASSED: searchInvalidItemTest
+17:40:13.920 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Stop test
+17:40:13.920 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- **********************************************************
+17:40:15.525 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:40:16.029 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Start test searchItemInContainerTest with data: []
+17:40:16.031 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5175/#/
+17:40:16.087 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (3a3ba9a87dfc7c5f99ead4354d7f1165)] -> css selector: input[placeholder*='item name']]}
+17:40:16.200 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (3a3ba9a87dfc7c5f99ead4354d7f1165)] -> css selector: input[placeholder*='item name']]}
+17:40:16.324 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (3a3ba9a87dfc7c5f99ead4354d7f1165)] -> css selector: input[placeholder*='item name']]}
+17:40:16.712 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (3a3ba9a87dfc7c5f99ead4354d7f1165)] -> xpath: //*[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'paper')]]}
+17:40:16.840 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (3a3ba9a87dfc7c5f99ead4354d7f1165)] -> xpath: //*[contains(text(), 'Find the Right Container')]]}
+17:40:26.921 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found elements 0
+17:40:26.921 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- PASSED: searchItemInContainerTest
+17:40:26.925 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Stop test
+17:40:26.925 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- **********************************************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

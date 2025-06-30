@@ -101,7 +101,6 @@ public class BasePage {
         }
         return true;
     }
-
     public boolean waitForElementToAppeared(WebElement element) {
         try {
             new WebDriverWait(driver, Duration.ofSeconds(10))

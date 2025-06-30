@@ -16,16 +16,15 @@ public class TestBase {
     protected static ApplicationManager app = new ApplicationManager
             (System.getProperty("browser", Browser.CHROME.browserName()));
 
-    protected WebDriver driver;  // <- добавь это поле
+    protected WebDriver driver;
 
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @BeforeMethod
     public void startTest(Method method, Object[] p) {
-        driver = app.startTest();  // <- инициализируем драйвер
+        driver = app.startTest();
         logger.info("Start test " + method.getName() + " with data: " + Arrays.asList(p));
     }
-
     @AfterMethod
     public void stopTest(ITestResult result) {
         if (result.isSuccess()) {
@@ -36,6 +35,6 @@ public class TestBase {
         logger.info("Stop test");
         logger.info("**********************************************************");
         app.stopTest();
-        driver = null; // по желанию, освобождаем ссылку после теста
+        driver = null;
     }
 }

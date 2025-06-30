@@ -23,7 +23,5 @@ public class ContainerPageTests extends TestBase {
         String itemName = "newspaper_" + System.currentTimeMillis();
         containerPage.addItemToFirstContainer(itemName);
         Assert.assertFalse(containerPage.isItemAddedSuccessfully(itemName), "The item was not added");
-
-
     }
 }
