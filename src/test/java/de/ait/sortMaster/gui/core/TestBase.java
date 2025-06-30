@@ -16,11 +16,13 @@ public class TestBase {
     protected static ApplicationManager app = new ApplicationManager
             (System.getProperty("browser", Browser.CHROME.browserName()));
 
+    protected WebDriver driver;  // <- добавь это поле
+
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @BeforeMethod
     public void startTest(Method method, Object[] p) {
-        WebDriver driver = app.startTest();
+        driver = app.startTest();  // <- инициализируем драйвер
         logger.info("Start test " + method.getName() + " with data: " + Arrays.asList(p));
     }
 
@@ -34,5 +36,6 @@ public class TestBase {
         logger.info("Stop test");
         logger.info("**********************************************************");
         app.stopTest();
+        driver = null; // по желанию, освобождаем ссылку после теста
     }
 }

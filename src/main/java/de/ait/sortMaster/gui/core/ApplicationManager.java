@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
+import java.util.List;
 
 public class ApplicationManager {
 
@@ -34,7 +35,8 @@ public class ApplicationManager {
         WebDriverListener listener = new MyListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
 
-        driver.get("");
+        driver.get("http://localhost:5175/#/");
+
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -44,4 +46,11 @@ public class ApplicationManager {
     public void stopTest() {
         driver.quit();
     }
+
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+
 }
+

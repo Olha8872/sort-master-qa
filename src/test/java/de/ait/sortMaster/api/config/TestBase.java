@@ -15,15 +15,12 @@ public class TestBase {
     public static Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @BeforeMethod
-    public void setUp() {
+    public void setUp(Method method, Object[] p) {
         RestAssured.baseURI = "";
         RestAssured.basePath = "";
-    }
-
-    @BeforeMethod
-    public void setUp(Method method, Object[] p) {
         logger.info("logger info: " + method.getName() + " with data: " + Arrays.asList(p));
     }
+
 
     @AfterMethod(enabled = true)
     public void tearDown(ITestResult result) {
