@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class MainPageTests extends TestBase {
 
     private MainPage mainPage;
-
+    
     @BeforeMethod
     public void setUp() {
         driver.get("http://localhost:5175/#/");
