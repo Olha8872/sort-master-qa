@@ -49,5 +49,6 @@ public class ApplicationManager {
     public WebDriver getDriver() {
         return driver;
     }
+
 }
 

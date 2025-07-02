@@ -1,0 +1,52 @@
+package de.ait.sortMaster.gui.page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+public class CreateContainerPage {
+    private WebDriver driver;
+    private WebDriverWait wait;
+
+    private By nameInput = By.id("name");
+    private By colorInput = By.id("color");
+    private By descriptionInput = By.id("description");
+    private By createButton = By.cssSelector("button[type='submit']");
+
+    public CreateContainerPage(WebDriver driver, WebDriverWait wait) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+    public void open() {
+        driver.get("http://localhost:5176/#/container-form");
+    }
+
+    public void setName(String name) {
+        WebElement nameElem = wait.until(ExpectedConditions.elementToBeClickable(nameInput));
+        nameElem.clear();
+        nameElem.sendKeys(name);
+    }
+
+    public void setColor(String colorHex) {
+        WebElement colorElem = wait.until(ExpectedConditions.elementToBeClickable(colorInput));
+        // очистка для type="color" не всегда работает, лучше просто sendKeys
+        colorElem.sendKeys(colorHex);
+    }
+
+    public void setDescription(String description) {
+        WebElement descElem = wait.until(ExpectedConditions.elementToBeClickable(descriptionInput));
+        descElem.clear();
+        descElem.sendKeys(description);
+    }
+
+    public void clickCreate() {
+        WebElement button = wait.until(ExpectedConditions.elementToBeClickable(createButton));
+        button.click();
+    }
+
+
+}
