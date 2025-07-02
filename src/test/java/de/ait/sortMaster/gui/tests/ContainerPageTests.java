@@ -25,3 +25,4 @@ public class ContainerPageTests extends TestBase {
         Assert.assertFalse(containerPage.isItemAddedSuccessfully(itemName), "The item was not added");
     }
 }
+

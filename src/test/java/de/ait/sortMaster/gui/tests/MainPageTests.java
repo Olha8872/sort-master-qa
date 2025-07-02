@@ -49,3 +49,4 @@ public class MainPageTests extends TestBase {
         Assert.assertFalse(mainPage.isNoMatchingContainerMessageDisplayed(), "'No matching containers found' was not displayed for empty input");
     }
 }
+

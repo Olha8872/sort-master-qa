@@ -42,7 +42,6 @@ public class ApplicationManager {
 
         return driver;
     }
-
     public void stopTest() {
         driver.quit();
     }
